@@ -7,7 +7,7 @@ pipeline {
        }
       stage("maven build"){
         steps {
-          git credentialsId: 'slave-ssh', url: 'https://github.com/ARCHANA926/my-app.git' branch: "master"
+          sh "clean packaage"
             }
       }
   }
